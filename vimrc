@@ -55,6 +55,7 @@ set backspace=indent,eol,start
 
 " Colors and Theme
 let g:solarized_termtrans = 1
+let g:molokai_original = 1
 let g:jsx_ext_required = 0
 set background=dark
 colorscheme molokai
