@@ -55,8 +55,9 @@ set backspace=indent,eol,start
 
 " Colors and Theme
 let g:solarized_termtrans = 1
+let g:jsx_ext_required = 0
 set background=dark
-colorscheme solarized
+colorscheme molokai
 
 " Auto Commands
 " Auto source vimrc on save 
@@ -360,7 +361,7 @@ endif
 let g:angular_source_directory = 'app/scripts'
 let g:angular_test_directory = 'test/spec'
 " vim-airline
-let g:airline_theme='badwolf'
+" let g:airline_theme='badwolf'
 " Modelines
 set modelines=1
 set foldmethod=indent
@@ -390,7 +391,7 @@ else
   map <C-l> <C-w>l
 endif
 " Quickfix shortcuts
-nmap <leader>fa :Ag
+nmap <leader>fa :Ag<space>
 nmap <leader>fn :cn<cr>
 nmap <leader>fp :cp<cr>
 nmap <leader>ff :cnf<cr>
