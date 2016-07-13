@@ -1,6 +1,6 @@
 # Install on your own machine
 
-    git clone git@github.com:castle-dev/.vimrc ~/.vim
+    git clone git@github.com:tieoneease/.vimrc ~/.vim
     cd ~/.vim
     ./setup.sh
 
