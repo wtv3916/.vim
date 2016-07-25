@@ -57,7 +57,7 @@ set backspace=indent,eol,start
 let g:solarized_termtrans = 1
 let g:molokai_original = 1
 let g:jsx_ext_required = 0
-let g:used_javascript_libs = 'react'
+let g:used_javascript_libs = 'angularjs, react'
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-monokai

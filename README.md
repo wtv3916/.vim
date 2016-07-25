@@ -20,7 +20,7 @@
 
     Base-16 coloring will not work without setting up terminal for base-16. 
     Please go to https://github.com/chriskempson/base16 for setup. 
-    Alternatively, you can just set colorscheme in .vimrc to one that does not use base-16
+    Alternatively, you can just set colorscheme in .vimrc to one that does not use base-16 (molokai works nicely by default)
 
 ## Keyboard shortcuts
 
