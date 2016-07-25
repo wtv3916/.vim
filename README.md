@@ -16,6 +16,10 @@
 
     git submodule foreach git pull origin master
 
+## NOTE FOR BASE-16
+
+    Base-16 coloring will not work without setting up terminal colors. Please go to https://github.com/chriskempson/base16 for setup. Otherwise, you can just set colorscheme in .vimrc to whichever you like
+
 ## Keyboard shortcuts
 
 The leader key is set to `,` and several commands have been remapped to avoid conflict with browser shortcuts. This allows us to develop from chromebook. :]
