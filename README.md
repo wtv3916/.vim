@@ -18,7 +18,9 @@
 
 ## NOTE FOR BASE-16
 
-    Base-16 coloring will not work without setting up terminal colors. Please go to https://github.com/chriskempson/base16 for setup. Otherwise, you can just set colorscheme in .vimrc to whichever you like
+    Base-16 coloring will not work without setting up terminal for base-16. 
+    Please go to https://github.com/chriskempson/base16 for setup. 
+    Alternatively, you can just set colorscheme in .vimrc to one that does not use base-16
 
 ## Keyboard shortcuts
 
