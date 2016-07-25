@@ -126,3 +126,6 @@
 [submodule "bundle/vim-javascript-syntax"]
 	path = bundle/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax
+[submodule "bundle/javascript-libraries-synta"]
+	path = bundle/javascript-libraries-syntax
+	url = https://github.com/othree/javascript-libraries-syntax.git
