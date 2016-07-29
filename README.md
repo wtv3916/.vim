@@ -16,11 +16,17 @@
 
     git submodule foreach git pull origin master
 
-## NOTE FOR BASE-16
+## Base-16
 
     Base-16 coloring will not work without setting up terminal for base-16. 
     Please go to https://github.com/chriskempson/base16 for setup. 
-    Alternatively, you can just set colorscheme in .vimrc to one that does not use base-16 (molokai works nicely by default)
+    Alternatively, just set colorscheme to any non base-16 scheme
+
+## Vim-airline
+
+    Your vim airline will look strange unless you install a powerline font
+    Monaco for Powerline can be found here: https://gist.github.com/epegzz/1634235
+    Others can be found here: https://github.com/powerline/fonts
 
 ## Keyboard shortcuts
 

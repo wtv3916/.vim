@@ -1,6 +1,6 @@
 "-------------------------
-" Authors: Zack Rosen, Scott Lowe
-" Email: zjrosen@gmail.com, me@scottdlowe.com
+" Authors: Zack Rosen, Scott Lowe, Sam Chung
+" Email: zjrosen@gmail.com, me@scottdlowe.com, chungsam95@gmail.com
 " Info: A chromebook-friendly vimrc
 "-------------------------
 
@@ -34,6 +34,32 @@ set smartcase                       " Try and be smart about cases
 nnoremap j gj
 nnoremap k gk
 
+" Airline
+set guifont=Monaco\ for\ Powerline   " Or statusbar looks like shit
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
+
 " Appearance
 set number                          " Always show line numbers
 set listchars=tab:▸\ ,trail:·,eol:¬ " Use new symbols for tabstops and EOLs
@@ -53,6 +79,7 @@ set laststatus=2                    " Always show the statusline
 set t_Co=256                        " Explicitly tell Vim that the terminal supports 256 colors
 set backspace=indent,eol,start
 
+
 " Colors and Theme
 let g:solarized_termtrans = 1
 let g:molokai_original = 1
@@ -60,7 +87,7 @@ let g:jsx_ext_required = 0
 let g:used_javascript_libs = 'angularjs, react'
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-monokai
+colorscheme base16-chalk
 
 " Auto Commands
 " Auto source vimrc on save 
