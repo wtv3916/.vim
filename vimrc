@@ -36,23 +36,29 @@ nnoremap k gk
 
 " Airline
 set guifont=Monaco\ for\ Powerline   " Or statusbar looks like shit
-let g:airline_theme='base16_chalk'
+"let g:airline_theme='base16_tomorrow'
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
+  let g:airline_symbols = {}
 endif
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
 let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_symbols.linenr = '⭡'
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '◀'
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.whitespace = 'Ξ'
 "let g:airline_left_sep = ''
 "let g:airline_left_alt_sep = ''
 "let g:airline_right_sep = ''
@@ -88,7 +94,7 @@ let g:jsx_ext_required = 0
 let g:used_javascript_libs = 'angularjs, react'
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-chalk
+colorscheme base16-tomorrow-night
 
 " Auto Commands
 " Auto source vimrc on save 
@@ -391,8 +397,6 @@ endif
 " vim-angular
 let g:angular_source_directory = 'app/scripts'
 let g:angular_test_directory = 'test/spec'
-" vim-airline
-" let g:airline_theme='badwolf'
 " Modelines
 set modelines=1
 set foldmethod=indent
