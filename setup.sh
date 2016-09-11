@@ -46,6 +46,10 @@ cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 echo -e "${PURPLE}Compiling libraries...${WHITE}"
 cmake --build . --target ycm_support_libs
 
+echo -e "${PURPLE}Installing YCM...${WHITE}"
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh
+
 echo -e "${PURPLE}Installing silver searcher...${WHITE}"
 if [ $OS = "Darwin" ]; then
   echo -e "Mac OS detected..."
