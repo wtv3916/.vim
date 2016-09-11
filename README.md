@@ -20,7 +20,7 @@
 
     Base-16 coloring will not work without setting up terminal for base-16. 
     Please go to https://github.com/chriskempson/base16 for setup. 
-    Alternatively, just set colorscheme to any non base-16 scheme
+    Alternatively, just set colorscheme to any non base-16 scheme (molokai works great)
 
 ## Vim-airline
 
