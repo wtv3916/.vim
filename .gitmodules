@@ -28,7 +28,7 @@
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "bundle/rainbow_parens"]
+[submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parens
 	url = https://github.com/kien/rainbow_parentheses.vim
 [submodule "bundle/easy-motion"]
