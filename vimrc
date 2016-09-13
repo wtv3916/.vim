@@ -374,13 +374,6 @@ let g:multi_cursor_quit_key='<C-c>'
 let g:vim_markdown_initial_foldlevel=1
 " NerdTree
 " autocmd vimenter * if !argc() | NERDTree | endif " Load NERDTree by default for directory
-" Rainbow Parens
-nmap <leader>r :RainbowParenthesesToggle<CR>
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-let g:rbpt_max = 16
-let g:rbpt_loadcmd_toggle = 0
 " Syntastic
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_loc_list_height = 5
