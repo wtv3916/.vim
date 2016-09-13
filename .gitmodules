@@ -28,9 +28,6 @@
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "bundle/rainbow_parentheses"]
-	path = bundle/rainbow_parens
-	url = https://github.com/kien/rainbow_parentheses.vim
 [submodule "bundle/easy-motion"]
 	path = bundle/easy-motion
 	url = https://github.com/Lokaltog/vim-easymotion
@@ -137,4 +134,4 @@
 	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
-	url = https://github.com/skammer/vim-css-color.git
+	url = https://github.com/ap/vim-css-color.git
