@@ -48,7 +48,7 @@ cmake --build . --target ycm_support_libs
 
 echo -e "${PURPLE}Installing YCM...${WHITE}"
 cd ~/.vim/bundle/YouCompleteMe
-./install.sh
+./install.py -all
 
 echo -e "${PURPLE}Installing silver searcher...${WHITE}"
 if [ $OS = "Darwin" ]; then
