@@ -1,6 +1,6 @@
 # Install on your own machine
 
-    git clone git@github.com:tieoneease/.vimrc ~/.vim
+    git clone https://github.com/tieoneease/.vimrc ~/.vim
     cd ~/.vim
     ./setup.sh
 
@@ -15,6 +15,10 @@
 ## Upgrade existing plugins
 
     git submodule foreach git pull origin master
+
+## Update plugins
+
+    git submodule init && git submodule update
 
 ## Base-16
 
@@ -80,3 +84,10 @@ The leader key is set to `,` and several commands have been remapped to avoid co
 ## Configuring tmux to play nicely with vim
 
 Install [Castle's tmux config](https://github.com/castle-dev/.tmux.conf#installing-on-mac-or-linux).
+
+## TODO
+
+install-vim.sh, pulling latest vim, building from source
+update setup.sh to account for npm, auto install nvm and install latest stable nodejs
+auto install fonts
+bashrc config
