@@ -44,11 +44,11 @@ cd .ycm_build
 echo -e "${PURPLE}Generating config files...${WHITE}"
 cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 echo -e "${PURPLE}Compiling libraries...${WHITE}"
-cmake --build . --target ycm_support_libs
+cmake --build . --target ycm_core --config Release
 
 echo -e "${PURPLE}Installing YCM...${WHITE}"
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --all
+./install.py --tern-completer
 
 echo -e "${PURPLE}Installing silver searcher...${WHITE}"
 if [ $OS = "Darwin" ]; then
