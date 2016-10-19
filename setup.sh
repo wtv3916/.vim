@@ -22,6 +22,9 @@ echo -e "${PURPLE}Installing tern_for_vim npm dependencies...${WHITE}"
 cd ~/.vim/bundle/tern_for_vim/
 npm install > /dev/null
 
+echo -e "${PURPLE}Creating tern-project file...${WHITE}"
+cp tern-project ~/.tern-project
+
 echo -e "${PURPLE}Building YCM...${WHITE}"
 if [ $OS = "Darwin" ]; then
   echo -e "Mac OS detected..."
