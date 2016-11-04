@@ -35,7 +35,7 @@ nnoremap j gj
 nnoremap k gk
 
 " Airline
-set guifont=Monaco\ for\ Powerline   " Or statusbar looks like shit
+"set guifont=Monaco\ for\ Powerline   " Or statusbar looks like shit
 "let g:airline_theme='base16_tomorrow'
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
