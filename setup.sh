@@ -51,7 +51,7 @@ cmake --build . --target ycm_core --config Release
 
 echo -e "${PURPLE}Installing YCM...${WHITE}"
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --tern-completer
+./install.py --tern-completer --clang-completer
 
 echo -e "${PURPLE}Installing silver searcher...${WHITE}"
 if [ $OS = "Darwin" ]; then
