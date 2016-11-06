@@ -1,4 +1,5 @@
 # Install on your own machine
+NOTE: The latest version of YCM requires vim 7.4+, and must be compiled with python support. For clipboard copies and pastes on linux, you must compile with a gui setting like gtk.
 
     git clone https://github.com/tieoneease/.vimrc ~/.vim
     cd ~/.vim
