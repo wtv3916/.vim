@@ -357,6 +357,9 @@ nmap <leader>gd :Gdiff<CR>
 nmap <leader>gl :Git log<CR>
 nmap <leader>gt :Git tree<CR>
 
+" YCM
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
 " CtrlP
 let g:ctrlp_match_window_bottom = 0 " Show at top of window
 let g:ctrlp_working_path_mode = 'ra' "Nearest dir 
