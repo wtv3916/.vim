@@ -280,9 +280,12 @@ nnoremap <leader>ft Vatzf
 
 nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
 
+" Avoid Esc
+imap jj <Esc>
+
 nmap <Leader>" viwS"
 map <leader>p "*p
-map <leader>y "*y
+map <leader>y "+y
 nmap <leader>0 "a
 nmap <leader>1 "b
 nmap <leader>2 "c
