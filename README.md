@@ -1,4 +1,4 @@
-# Installing the latest version of vim from source with language and clipboard support
+# Installing the latest version of Vim
 
     cd ~ // or any directory you'd like, you may remove this folder after
     git clone https://github.com/vim/vim.git
