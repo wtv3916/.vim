@@ -24,6 +24,7 @@ npm install > /dev/null
 
 echo -e "${PURPLE}Creating tern-project file...${WHITE}"
 cp ./tern-project ~/.tern-project
+cp ./eslintrc ~/.eslintrc
 
 echo -e "${PURPLE}Building YCM...${WHITE}"
 if [ $OS = "Darwin" ]; then
@@ -69,4 +70,5 @@ cd ~/.vim/bundle/vimproc.vim/
 make
 
 echo -e "${CYAN}Success!${WHITE}"
+echo -e "Be sure to install nvm and npm install -g eslintrc"
 cd ~
