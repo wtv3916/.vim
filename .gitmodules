@@ -135,3 +135,6 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = https://github.com/dracula/vim.git
+[submodule "bundle/vim-simple-todo"]
+	path = bundle/vim-simple-todo
+	url = https://github.com/vitalk/vim-simple-todo

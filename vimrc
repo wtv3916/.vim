@@ -22,6 +22,7 @@ syntax enable                       " Enable syntax highlighting
 set nostartofline                   " Don't reset cursor to start of line when moving around
 set ttyfast
 set completeopt-=preview
+set lazyredraw
 
 " Searching/Moving
 " nnoremap / /\v
@@ -42,13 +43,13 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.paste = 'ρ'
+"let g:airline_left_sep = '⮀'
+"let g:airline_right_sep = '⮂'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.branch = '⭠'
+"let g:airline_symbols.readonly = '⭤'
 
 " unicode symbols
 "let g:airline_left_sep = '»'
@@ -70,13 +71,13 @@ let g:airline_symbols.paste = 'ρ'
 "let g:airline_symbols.whitespace = 'Ξ'
 
 " powerline symbols
-"let g:airline_left_sep = ''
+let g:airline_left_sep = ''
 "let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
+let g:airline_right_sep = ''
 "let g:airline_right_alt_sep = ''
-"let g:airline_symbols.branch = ''
-"let g:airline_symbols.readonly = ''
-"let g:airline_symbols.linenr = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 " old vim-powerline symbols
 "let g:airline_left_sep = '⮀'
@@ -108,10 +109,10 @@ set backspace=indent,eol,start
 
 
 " Colors and Theme
-let g:solarized_termtrans = 1
-let g:molokai_original = 1
+"let g:solarized_termtrans = 1
+"let g:molokai_original = 1
 let g:jsx_ext_required = 0
-let g:used_javascript_libs = 'angularjs, react'
+let g:used_javascript_libs = 'react'
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme dracula
@@ -293,6 +294,7 @@ nmap <leader>6 "g
 nmap <leader>7 "h
 nmap <leader>8 "i
 nmap <leader>9 "j
+imap jj <Esc>
 
 " Windows
 " set winheight=15
@@ -365,8 +367,10 @@ endfunction
 " Plugins
 " Gundo
 nnoremap <leader>u :GundoToggle<CR>
+
 " Emmet
 let g:user_emmet_leader_key = '<c-e>'
+
 "Fugitive Git
 nmap <leader>ga :Git add .<CR>
 nmap <leader>gc :Git commit<CR>
