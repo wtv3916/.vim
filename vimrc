@@ -281,9 +281,12 @@ nnoremap <leader>ft Vatzf
 
 nnoremap <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:noh<CR>
 
+" Avoid Esc
+imap jj <Esc>
+
 nmap <Leader>" viwS"
 map <leader>p "*p
-map <leader>y "*y
+map <leader>y "+y
 nmap <leader>0 "a
 nmap <leader>1 "b
 nmap <leader>2 "c
@@ -404,9 +407,12 @@ let g:vim_markdown_initial_foldlevel=1
 " Syntastic
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_loc_list_height = 5
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_mode_map={ 'mode': 'active',
       \ 'active_filetypes': [],
       \ 'passive_filetypes': ['html', 'ts'] }
+let g:syntastic_quiet_messages = { "level": [],
+      \ 'type': ['style'] }
 " Tabularize
 if exists(":Tabularize")
   nmap <Leader>a= :Tabularize /=<CR>

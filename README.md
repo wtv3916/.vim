@@ -1,3 +1,19 @@
+# Installing the latest version of Vim
+
+    cd ~ // or any directory you'd like, you may remove this folder after
+    git clone https://github.com/vim/vim.git
+    cd vim
+    ./configure --with-features=huge \
+      --enable-multibyte \
+      --enable-rubyinterp=yes \
+      --enable-pythoninterp=yes \
+      --enable-python3interp=yes \
+      --enable-perlinterp=yes \
+      --enable-luainterp=yes \
+      --enable-gui=gtk2 --enable-cscope
+    make
+    sudo make install
+
 # Install on your own machine
 NOTE: The latest version of YCM requires vim 7.4+, and must be compiled with python support. For clipboard copies and pastes on linux, you must compile with a gui setting like gtk.
 
