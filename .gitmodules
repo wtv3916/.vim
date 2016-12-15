@@ -138,3 +138,6 @@
 [submodule "bundle/vim-simple-todo"]
 	path = bundle/vim-simple-todo
 	url = https://github.com/vitalk/vim-simple-todo
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = https://github.com/posva/vim-vue.git
