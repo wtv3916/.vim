@@ -94,6 +94,11 @@ The leader key is set to `,` and several commands have been remapped to avoid co
     `,``t``s``d` | go to definition (typesript only)
     `,``t``s``r` | list references (typesript only)
     `,``t``s``c` | change name (typesript only)
+    `,``i` | insert todo on current line
+    `,``o` | insert todo on new line below current line
+    `,``O` | insert todo on new line above current line
+    `,``x` | mark current todo as completed
+    `,``s` | toggle current todo state
     `z``m` | fold all code in active window (using indentation)
     `z``o` | open highlighted code fold
     `z``c` | close highlighted code block (using indentation)
