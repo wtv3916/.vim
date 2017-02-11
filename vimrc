@@ -23,6 +23,11 @@ set nostartofline                   " Don't reset cursor to start of line when m
 set ttyfast
 set completeopt-=preview
 set lazyredraw
+let g:html_indent_script1 = "inc" 
+let g:html_indent_style1 = "inc" 
+let g:html_indent_inctags = "html,body,head"
+
+
 
 " Searching/Moving
 " nnoremap / /\v
