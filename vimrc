@@ -29,6 +29,7 @@ let g:html_indent_inctags = "html,body,head"
 
 
 
+
 " Searching/Moving
 " nnoremap / /\v
 " vnoremap / /\v
@@ -48,13 +49,22 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.whitespace = 'Ξ'
+"let g:airline_symbols.paste = 'ρ'
 "let g:airline_left_sep = '⮀'
 "let g:airline_right_sep = '⮂'
 "let g:airline_symbols.linenr = '␤'
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
+
+" Linux config
+let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 " unicode symbols
 "let g:airline_left_sep = '»'
@@ -76,13 +86,13 @@ let g:airline_symbols.paste = 'ρ'
 "let g:airline_symbols.whitespace = 'Ξ'
 
 " powerline symbols
-let g:airline_left_sep = ''
+"let g:airline_left_sep = ''
 "let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
+"let g:airline_right_sep = ''
 "let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
 
 " old vim-powerline symbols
 "let g:airline_left_sep = '⮀'
@@ -418,6 +428,15 @@ let g:syntastic_mode_map={ 'mode': 'active',
       \ 'passive_filetypes': ['html', 'ts'] }
 let g:syntastic_quiet_messages = { "level": [],
       \ 'type': ['style'] }
+let g:syntastic_vue_checkers = ['eslint']
+let local_eslint = finddir('node_modules', '.;') . '/.bin/eslint'
+if matchstr(local_eslint, "^\/\\w") == ''
+    let local_eslint = getcwd() . "/" . local_eslint
+endif
+if executable(local_eslint)
+    let g:syntastic_javascript_eslint_exec = local_eslint
+    let g:syntastic_vue_eslint_exec = local_eslint
+endif
 " Tabularize
 if exists(":Tabularize")
   nmap <Leader>a= :Tabularize /=<CR>
