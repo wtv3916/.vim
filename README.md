@@ -53,10 +53,10 @@ NOTE: The latest version of YCM requires vim 7.4+, and must be compiled with pyt
 
 The leader key is set to `,` and several commands have been remapped to avoid conflict with browser shortcuts. This allows us to develop from chromebook. :]
 
-    | Shortcut | Action |
-    | -------- | ------ |
-    | `,``n``t` | open file browser (NERDTree) |
-    | `,``b``e` | browse open buffers |
+    Shortcut | Action
+    -------- | ------ 
+    `,``n``t` | open file browser (NERDTree)
+    `,``b``e` | browse open buffers
     `ctrl` + `p` | fuzzy match file paths in current directory
     `,``,` | refresh cache for fuzzy match
     `ctrl` + `n` | multi-cursor current word (repeat to select more occurences)
