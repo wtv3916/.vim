@@ -5,7 +5,7 @@ WHITE='\033[0;37m'
 YELLOW='\033[1;33m'
 OS=$(uname)
 
-echo -e "${PURPLE}Installing .vimrc...${YELLOW}"
+echo -e "${PURPLE}Installing .vim...${YELLOW}"
 ln -s ~/.vim/vimrc ~/.vimrc
 
 if [ "$?" -ne "0" ]; then
